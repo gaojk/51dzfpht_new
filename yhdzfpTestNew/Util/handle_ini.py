@@ -9,7 +9,7 @@ class HandleINI():
     def load_ini(self):
         '''加载配置文件ini'''
         config = configparser.ConfigParser()
-        file_path = 'C:/Users/Charseki\Desktop\yhdzfpTestNew\yhdzfpTestNew\Config/server.ini'
+        file_path = 'C:/Users/Administrator/Desktop/51dzfpht_new/yhdzfpTestNew/Config/server.ini'
         config.read(file_path, encoding='utf-8-sig')
         return config
 
@@ -28,10 +28,10 @@ class HandleINI():
 get_ini = HandleINI()
 
 # if __name__ == '__main__':
-#     aa = get_ini.get_ini_value('host_yhdzfp')
-#     print(aa)
-#     bb = get_ini.get_ini_value('host_51dzfpht_new')
-#     print(bb)
+    # aa = get_ini.get_ini_value('host_yhdzfp')
+    # print(aa)
+    # bb = get_ini.get_ini_value('host_51dzfpht_new')
+    # print(bb)
 
 
 

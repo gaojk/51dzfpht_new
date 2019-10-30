@@ -8,7 +8,7 @@ sys.path.append(base_path)
 class HandleExcel:
     def load_excel(self):
         '''定义加载excel的方法'''
-        open_excel = openpyxl.load_workbook('E:/yhdzfpTestNew/Config/yhdzfp.xlsx')
+        open_excel = openpyxl.load_workbook('C:/Users/Administrator/Desktop/51dzfpht_new/yhdzfpTestNew/Config/51新后台接口用例.xlsx')
         return open_excel
 
     def get_sheet_data(self, index=None):
@@ -74,17 +74,17 @@ class HandleExcel:
 get_excel = HandleExcel()
 
 # if __name__ == '__main__':
-    # return_data = get_excel.excel_write_data(2, 10, '通过')
-    # row_list_value = get_excel.get_rows_value(2)
+#     return_data = get_excel.excel_write_data(2, 10, '通过')
+#     row_list_value = get_excel.get_rows_value(2)
 #     column_list_value = get_excel.get_columns_value()
 #     get_rows = get_excel.get_rows_number('Case_id')
 #     all_list_data = get_excel.get_excel_all_data()
-    # print(column_list_value)
-    # print(column_list_value)
-    # print(get_rows)
-    # print(row_list_value)
-    # print("-------------------------------------------------->")
-    # print(all_list_data[0])
+#     print(column_list_value)
+#     print(column_list_value)
+#     print(get_rows)
+#     print(row_list_value)
+#     print("-------------------------------------------------->")
+#     print(all_list_data[0])
 
 
 
