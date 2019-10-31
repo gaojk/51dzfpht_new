@@ -33,6 +33,7 @@ class HandleNumber():
         '''随机生成18位办理人证件号码'''
         blrzj = "3302274991" + str(random.randint(10000000, 99999999))
         return blrzj
+
     def get_blryx(self):
         '''写死办理人邮箱'''
         blryx = "364942727@qq.com"
