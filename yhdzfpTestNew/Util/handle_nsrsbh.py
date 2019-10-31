@@ -6,9 +6,12 @@ sys.path.append(base_path)
 
 #定义一些变量的方法
 class HandleNumber():
-    def get_nsrsbh(self):
+    def get_nsrsbh(self, nsrsbh=None):
         '''随机生成15位纳税人识别号'''
-        nsrsbh = "3302019" + str(random.randint(10000000, 99999999))
+        if nsrsbh == None:
+            nsrsbh = "3302019" + str(random.randint(10000000, 99999999))
+        else:
+            nsrsbh = nsrsbh
         return nsrsbh
 
     def get_nsrmc(self):
@@ -43,7 +46,7 @@ Get_blrzj = HandleNumber()
 Get_blryx = HandleNumber()
 
 # if __name__ == '__main__':
-#     aa = Get_nsrsbh.get_nsrsbh()
+#     aa = Get_nsrsbh.get_nsrsbh('9133028255795774XU')
 #     print(aa)
 #     bb = Get_blrsj.get_blrsj()
 #     print(bb)
